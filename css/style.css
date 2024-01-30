@@ -214,6 +214,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  height:auto;
 }
 
 svg {
@@ -1219,6 +1220,7 @@ pre code {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
+    max-height: 180px;
   }
 
   .col-md-4 {
@@ -7809,6 +7811,7 @@ button.bg-dark:focus {
   -webkit-box-direction: normal !important;
   -ms-flex-direction: column !important;
   flex-direction: column !important;
+  max-width: 60%;
 }
 
 .flex-row-reverse {
@@ -9123,7 +9126,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important;
+  margin-top: 0rem !important;
 }
 
 .mr-5,
@@ -11681,7 +11684,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.active>a {
-  color: #5a779a;
+  color: #76b1ff;
 }
 
 .ftco-navbar-light .navbar-toggler {
@@ -11783,14 +11786,14 @@ h5,
   -webkit-transition: .3s all ease-out;
   -o-transition: .3s all ease-out;
   transition: .3s all ease-out;
-  box-shadow: 1px 3px 15px black;
+  box-shadow: 1px 1px 10px black;
 }
 
 .ftco-navbar-light.scrolled.sleep {
   -webkit-transition: .3s all ease-out;
   -o-transition: .3s all ease-out;
   transition: .3s all ease-out;
-  box-shadow: 1px 3px 15px black;
+  box-shadow: 1px 1px 10px black;
 }
 
 .ftco-navbar-light.scrolled .navbar-brand {
@@ -12639,9 +12642,10 @@ textarea.form-control {
 }
 
 .ftco-footer {
-  font-size: 16px;
+  font-size: 14px;
   background: #222831;
-  padding: 5em 0 3em 0;
+  padding: 0em 0 0em 0;
+  max-height: 900px;
 }
 
 .ftco-footer .logo {
@@ -12664,7 +12668,7 @@ textarea.form-control {
 .ftco-footer .ftco-footer-widget h2 {
   font-weight: normal;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -13263,6 +13267,7 @@ textarea.form-control {
   display: table;
   line-height: 1.5;
   margin-bottom: 15px;
+  margin: 2px;
 }
 
 .block-23 ul li span {
@@ -13956,4 +13961,149 @@ textarea.form-control {
 .service-item:hover i {
   background: #5a779a;
   color: #FFFFFF;
+}
+
+
+
+.profile-creative {
+	display: flex;
+	margin-left: -15px;
+	text-align: left;
+	color: #74757f;
+}
+
+.profile-creative > * {
+	margin-left: 15px;
+}
+
+.profile-creative-figure {
+	position: relative;
+	overflow: hidden;
+	max-width: 80px;
+	flex-shrink: 0;
+}
+
+.profile-creative-image {
+	width: 100%;
+	border-radius: 6px;
+}
+
+.profile-creative-main {
+	flex-grow: 1;
+}
+
+.profile-creative-title a {
+	color: #151515;
+	font-weight: 300;
+}
+
+.profile-creative-title a:hover {
+	color: #007bff;
+}
+
+.profile-creative-position {
+	color: #151515;
+}
+
+.profile-creative-contacts {
+	color: #151515;
+}
+
+.profile-creative-contacts a {
+	color: inherit;
+	font-weight: 400;
+}
+
+.profile-creative-contacts a:hover {
+	color: #007bff;
+}
+
+* + .profile-creative-position {
+	margin-top: 0;
+}
+
+* + .profile-creative-contacts {
+	margin-top: 15px;
+}
+
+@media (min-width: 576px) {
+	.profile-creative {
+		margin-left: -30px;
+	}
+	.profile-creative > * {
+		margin-left: 30px;
+	}
+	.profile-creative-figure {
+		max-width: 22%;
+	}
+}
+
+@media (min-width: 768px) {
+	.profile-creative-figure {
+		max-width: 29%;
+	}
+	.profile-creative-main {
+		padding-right: 30px;
+	}
+	* + .profile-creative-contacts {
+		margin-top: 22px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.profile-creative {
+		margin-left: -20px;
+	}
+	.profile-creative > * {
+		margin-left: 20px;
+	}
+	.profile-creative-figure {
+		max-width: 25%;
+	}
+	.profile-creative-main {
+		padding-right: 10px;
+	}
+}
+
+.profile-creative-image {
+	width: 100%;
+	border-radius: 6px;
+}
+
+@keyframes slideInLeft {
+	0% {
+		transform: translate3d(-100%, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.slideInLeft {
+	animation-name: slideInLeft;
+}
+
+
+
+.wow {
+	backface-visibility: hidden;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }

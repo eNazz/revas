@@ -9,6 +9,7 @@ function init() {
 	// -34.608770
 	// -58.374472
 
+
 	var mapOptions = {
 		// How zoomed in you want the map to start at (always required)
 		zoom: 7,
