@@ -578,6 +578,8 @@ pre code {
   margin-left: auto;
 }
 
+
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -12646,6 +12648,7 @@ textarea.form-control {
   background: #222831;
   padding: 0em 0 0em 0;
   max-height: 900px;
+  padding: 30px 0px 00px
 }
 
 .ftco-footer .logo {
@@ -13963,7 +13966,37 @@ textarea.form-control {
   color: #FFFFFF;
 }
 
+.service-item-mini {
+  transition: .5s;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1px;
+}
 
+.service-item-mini:hover {
+  box-shadow: 0 0 30px #5a779a;
+}
+
+.service-item-mini i {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid 5a779a;
+  background: #FFFFFF;
+  color: #5a779a;
+  transition: .5s;
+  font-size: 50px
+}
+
+.service-item-mini h5 {
+  font-size: 1rem
+}
+
+.service-item-mini:hover i {
+  background: #5a779a;
+  color: #FFFFFF;
+}
 
 .profile-creative {
 	display: flex;
@@ -14107,3 +14140,281 @@ textarea.form-control {
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+.navbar-img {
+  max-width: 150px;
+  height: 80px;
+
+}
+
+.ftco-consulta {
+  background-position: top center !important;
+  position: relative;
+  height: 450px;
+}
+
+.ftco-consulta .contenedor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  content: '';
+  text-align: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .ftco-consulta .overlay {
+    width: 50%;
+  }
+}
+
+.ftco-consulta .half {
+  width: 100%;
+}
+
+.ftco-consulta .half h2 {
+  font-weight: 600;
+}
+
+.consulta .form-control {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  height: 52px !important;
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.consulta .form-control:focus,
+.consulta .form-control:active {
+  border-color: #000000;
+}
+
+.consulta .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white !important;
+}
+
+.consulta .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white !important;
+}
+
+.consulta .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white !important;
+}
+
+.consulta .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: white !important;
+}
+
+.consulta textarea.form-control {
+  height: inherit !important;
+}
+
+.subheading2 {
+  font-size: 16px;
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #5a779a;
+  text-shadow: 4px 1px 6px rgba(14,13,13,0.78);
+
+}
+
+/*  LOADER */
+
+.card {
+  position: relative;
+  background: #131b33;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #17f3fd);
+  animation: animate-1 2s linear infinite;
+}
+
+@keyframes animate-1 {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.card span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #17f3fd);
+  animation: animate-2 2s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes animate-2 {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+.card span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, #17f3fd);
+  animation: animate-3 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate-3 {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.card span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #17f3fd);
+  animation: animate-4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate-4 {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+.card2 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+  background: #131b33;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.card2 span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #17f3fd);
+  animation: cardanimate-1 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes cardanimate-1 {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.card2 span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #17f3fd);
+  animation: cardanimate-2 2s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes cardanimate-2 {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+.card2 span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, #17f3fd);
+  animation: cardanimate-3 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes cardanimate-3 {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.card2 span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #17f3fd);
+  animation: cardanimate-4 2s linear infinite;
+}
+
+@keyframes cardanimate-4 {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(100%);
+  }
+}
+
+.message {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.5;
+}
+
