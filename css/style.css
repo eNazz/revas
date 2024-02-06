@@ -14457,8 +14457,8 @@ textarea.form-control {
   max-width: 30px;
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .whatsapp {
     margin-right: 8%;
   }
-}
+} */
