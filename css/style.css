@@ -4895,6 +4895,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  align-items: center;
 }
 
 .navbar-nav .nav-link {
@@ -11667,7 +11668,8 @@ h5,
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 30px;
+  max-width: 230px;
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.cta>a span {
@@ -11741,7 +11743,7 @@ h5,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta>a span {
@@ -13809,7 +13811,7 @@ textarea.form-control {
   font-weight: normal;
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .block-2 .back {
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
@@ -13824,7 +13826,7 @@ textarea.form-control {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
-}
+} */
 
 #ftco-loader {
   position: fixed;
@@ -13956,9 +13958,9 @@ textarea.form-control {
   justify-content: center;
   border: 2px solid 5a779a;
   background: #FFFFFF;
-  color: #5a779a;
+  color: #5a779a; 
   transition: .5s;
-  font-size: 50px
+  font-size: 65px
 }
 
 .service-item:hover i {
@@ -14449,6 +14451,12 @@ textarea.form-control {
 
 }
 
+.whatsapp-header {
+  font-size: 32px;
+  color: #25d366;
+  padding-left: 20px;
+}
+
 .whatsapp-icon {
   margin-top: 13px;
 }
@@ -14457,8 +14465,8 @@ textarea.form-control {
   max-width: 30px;
 }
 
-/* @media (max-width: 991.98px) {
-  .whatsapp {
-    margin-right: 8%;
+@media (max-width: 991.98px) {
+  .whatsapp-header {
+    padding-left: 0px;
   }
-} */
+}
