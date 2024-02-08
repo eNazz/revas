@@ -13740,6 +13740,7 @@ textarea.form-control {
   left: 20px;
   right: 20px;
   bottom: 20px;
+  text-align: center;
 }
 
 .block-2 .front .box h2,
@@ -14639,10 +14640,17 @@ textarea.form-control {
 }
 
 .mob-form {
-margin: 10px;
-padding: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .mob-cont {
   margin: 10px;
+}
+
+.btn-serv-card {
+  align-items: center;
+  justify-content: end;
+  font-style: italic;
+  background: #96b5d6;
 }
