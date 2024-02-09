@@ -14742,3 +14742,8 @@ textarea.form-control {
 	font-size: 32px;
   font-weight: 400;
 }
+
+.nov-column {
+  padding: 0;
+  margin: -10px 0;
+}
