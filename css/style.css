@@ -14839,3 +14839,16 @@ textarea.form-control {
   padding: 0;
   margin: -10px 0;
 }
+
+.banner {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
