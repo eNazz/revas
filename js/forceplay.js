@@ -10,4 +10,4 @@ function makeURL(object) {
     myvideo.src = videoUrl;
   }
 
-  display('./assets/video_home.mp4');
+  display('./assets/video_home.webm');
