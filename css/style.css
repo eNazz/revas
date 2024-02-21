@@ -13758,10 +13758,9 @@ textarea.form-control {
 }
 
 .back ul li {
-  font-size: 15px;
+  font-size: 13px;
+  font-size-adjust: ex-height 0.5;
   color: white;
-  align-self: center;
-  justify-content: center;
 }
 
 .block-2 .front,
