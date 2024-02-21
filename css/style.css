@@ -10170,6 +10170,11 @@ button.bg-dark:focus {
     padding-right: 3rem !important;
   }
 
+  .pr-md-6,
+  .px-md-6 {
+    padding-right: 8rem !important;
+  }
+
   .pb-md-5,
   .py-md-5 {
     padding-bottom: 3rem !important;
@@ -10180,6 +10185,10 @@ button.bg-dark:focus {
     padding-left: 3rem !important;
   }
 
+  .pl-md-6,
+  .px-md-6 {
+    padding-left: 8rem !important;
+  }
   .m-md-n1 {
     margin: -0.25rem !important;
   }
@@ -13746,6 +13755,12 @@ textarea.form-control {
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;
+}
+
+.back ul li {
+  color: white;
+  align-self: center;
+  justify-content: center;
 }
 
 .block-2 .front,
