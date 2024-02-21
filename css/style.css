@@ -14853,9 +14853,9 @@ textarea.form-control {
 }
 
 .counter-minimal-icon {
-  font-size: 24px;
+  font-size: 30px !important;
   line-height: 1;
-  color: #007bff;
+  color: #5a779a;
 }
 
 .counter-minimal-main {
