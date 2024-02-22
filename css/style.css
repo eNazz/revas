@@ -12312,6 +12312,15 @@ h5,
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+@media (max-width: 768px) {
+  .tabulation-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+
 .services-wrap {
   position: relative;
   z-index: 0;

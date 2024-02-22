@@ -10,7 +10,11 @@ $black: #000000;
 $primary: #afa939;
 $secondary: #2c2f3a;
 
-
+.container-lg{
+	@include media-breakpoint-down(lg){
+	  width: auto;
+	}
+  }
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
