@@ -4,7 +4,7 @@ function makeURL(object) {
   }
 
   async function display(videoStream){
-    var myvideo = document.getElementById('forceplay');
+    var myvideo = document.getElementById('ForcePlay');
     let blob = await fetch(videoStream).then(r => r.blob());
     var videoUrl= makeURL(blob);
     myvideo.src = videoUrl;
