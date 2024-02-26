@@ -11896,18 +11896,15 @@ h5,
   width: 100%;
   height: 100vh;
   position: inherit;
-  /* background-image: url("./img/slide_1.jpg"), url("./img/slide_2.jpg"), url("./img/slide_3.jpg"), url("./img/slide_4.jpg");
-  background-repeat: no-repeat;
-  background-color: #cccccc; */
   background-size: cover;
-  background-position: top center;
+  /* background-position: center bottom; */
   position: relative;
   z-index: 1 !important;
 }
 
 @media (max-width: 1199.98px) {
   .hero-wrap {
-    background-position: center center !important;
+   /*  background-position: center bottom !important; */
   }
 }
 
@@ -11921,7 +11918,7 @@ h5,
   opacity: .5;
   background: #000000;
   background-size: cover;
-  background-position: top center;
+  /* background-position: center bottom; */
   position: absolute;
 } 
 
@@ -11937,9 +11934,15 @@ h5,
   height: 500px;
 }
 
-.hero-wrap.hero-wrap2.service-img {
-  background-position: bottom !important;
+.hero-wrap.hero-wrap-2.fixed {
+  height: 500px;
+  background-attachment: local, scroll !important;
+}
 
+.hero-wrap.hero-wrap-2.fixed70 {
+  height: 500px;
+  background-attachment: local, scroll !important;
+  background-position: 0% 70% !important;
 }
 
 @-webkit-keyframes blinker {
@@ -14750,13 +14753,14 @@ textarea.form-control {
 .cont-map .contact-form form {
   position: relative;
   top: -50px;
-  right: -50px;
+  right: -180px;
   padding: 60px 30px;
   background: #d5d6e7 !important;
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   border: 0px solid #f7f7f7;
   border-radius: 5px;
+  max-width: 380px;
 }
 
 .cont-map .contact-form form input,
@@ -15007,4 +15011,9 @@ textarea.form-control {
   transform: translateX(-50%) translateY(-50%);
   z-index: 0;
 
+}
+
+.text-just {
+  text-align: justify !important;
+  max-width: 90%;
 }
