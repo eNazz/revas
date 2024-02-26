@@ -13888,9 +13888,24 @@ textarea.form-control {
   right: 0;
   text-align: center;
   padding: 0 20px;
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
 }
+
+@media (max-width: 991.98px) {
+  .block-2 .back p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .block-2 .back p {
+    font-size: 11px;
+    padding: 10px;
+    top: 10px;
+  }
+}
+
 
 .block-2 .author {
   bottom: 0;
