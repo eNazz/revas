@@ -55,7 +55,8 @@
   </nav>
   <!-- END nav -->
 
-  <section class="hero-wrap hero-wrap-2 fixed70" style="background-image: url('img/foto_contacto_2.jpg'); background-position: 0% 70%;"
+  <section class="hero-wrap hero-wrap-2 fixed70"
+    style="background-image: url('img/foto_contacto_2.jpg'); background-position: 0% 70%;"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -78,11 +79,11 @@
         </div>
         <div class="w-100"></div>
         <div class="col-md-3">
-         <!--  <p><span>Dirección:</span> <br> Avenida de Mayo 570. Of.36 Microcentro, Buenos Aires.</p> -->
-         <ul class="list-unstyled">
-          <li><span class="icon icon-map-marker"></span><span class="text"> Avenida de Mayo 570.
-              Of.36 Microcentro, Buenos Aires.</span></li>
-        </ul>
+          <!--  <p><span>Dirección:</span> <br> Avenida de Mayo 570. Of.36 Microcentro, Buenos Aires.</p> -->
+          <ul class="list-unstyled">
+            <li><span class="icon icon-map-marker"></span><span class="text"> Avenida de Mayo 570.
+                Of.36 Microcentro, Buenos Aires.</span></li>
+          </ul>
         </div>
         <div class="col-md-3">
           <!-- <p><span>Directo/Fax:</span> <a href="tel://1143315364">(011) 4331-5364</a></p>
@@ -103,8 +104,8 @@
         <div class="col-md-3">
           <!-- <p><span>Correo:</span> <a href="mailto:info@estudiorevas.com"> info@estudiorevas.com</a></p> -->
           <ul class="list-unstyled">
-              <li><a href="mailto:info@estudiorevas.com"><span class="icon icon-envelope"></span><span
-                  class="text"> info@estudiorevas.com</span></a></li>
+            <li><a href="mailto:info@estudiorevas.com"><span class="icon icon-envelope"></span><span class="text">
+                  info@estudiorevas.com</span></a></li>
           </ul>
         </div>
         <div class="col-md-3">
@@ -112,43 +113,13 @@
           <div>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
               <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100063625416562"><span
-                    class="icon-bg icon-facebook"></span></a></li>
+                    class="icon-facebook"></span></a></li>
               <li class="ftco-animate"><a href="https://www.instagram.com/estudiorevas/?hl=es"><span
-                    class="icon-bg icon-instagram"></span></a></li>
+                    class="icon-instagram"></span></a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- <div class="row block-9 no-gutters">
-        <div class="col-lg-6 order-md-last d-flex">
-          <form action="#" class="bg-light p-5 contact-form">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nombre completo">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Correo Electronico">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Asunto">
-            </div>
-            <div class="form-group">
-              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensaje"></textarea>
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Enviar consulta" class="btn btn-primary py-3 px-5">
-            </div>
-          </form>
-
-        </div>
-
-        <div class="col-lg-6 d-flex align-items-center">
-          <div id="" class="bg-white"></div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.817361132528!2d-58.379343710155226!3d-34.60877960321256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad309c593ed%3A0x70f609b726df827d!2sAv.%20de%20Mayo%20570%20Of.36%2C%20C1084%20AAN%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707273695175!5m2!1ses-419!2sar"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div> -->
     </div>
   </section>
 
@@ -158,21 +129,27 @@
       <div class="row">
         <div class="col-lg-5 col-md-6 contact-form wow fadeInDown" data-wow-delay=".3s"
           style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">
-          <form action="#" class="bg-light p-5 contact-form">
+          <form id="form" target="_blank" action="https://formsubmit.co/esteban.nazer@outlook.com" method="post"
+            role="form" class="bg-light p-5 contact-form">
+            <input type="hidden" name="_captcha" value="false">
+            <span style="display: none;" id="texto-error">Complete los datos requeridos *</span>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nombre completo">
+              <input name="nombre" id="nombre" type="text" class="form-control" placeholder="Nombre completo *"
+                required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Correo Electronico">
+              <input name="mail" id="mail" type="mail" class="form-control" pattern="[^ @]*@[^ @]*"
+                placeholder="Correo Electronico *" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Asunto">
+              <input name="asunto" id="asunto" type="text" class="form-control" placeholder="Asunto *" required>
             </div>
             <div class="form-group">
-              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensaje"></textarea>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="7" class="form-control" placeholder="Mensaje *"
+                required></textarea>
             </div>
             <div class="form-group">
-              <input type="submit" value="Enviar consulta" class="btn btn-primary py-3 px-5">
+              <button type="submit" onclick="borrarValor()" class="btn btn-primary py-3 px-5">Enviar consulta</button>
             </div>
           </form>
         </div>
@@ -240,7 +217,7 @@
                       class="text">info@estudiorevas.com</span></a></li>
               </ul>
               <div>
-                
+
               </div>
             </div>
           </div>
@@ -287,23 +264,23 @@
         stroke="#F96D00" />
     </svg></div> -->
 
-    <div class="loader-container" id="loader">
-			<div class="card-revas">
-				<div class="card">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div class="card2">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-			<h1 class="message">REVAS</h1>
-		</div>
+  <div class="loader-container" id="loader">
+    <div class="card-revas">
+      <div class="card">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="card2">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <h1 class="message">REVAS</h1>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>

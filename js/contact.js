@@ -16,3 +16,50 @@ window.addEventListener('resize', function () {
         section.appendChild(div);
     }
 });
+
+
+/* function borrarValor () {
+    document.getElementById("nombre").value = "";
+    document.getElementById("mail").value = "";
+    document.getElementById("asunto").value = "";
+    document.getElementById("mensaje").value = "";
+} */
+function borrarValor() {
+    const formulario = document.getElementById("form");
+    const campos = formulario.querySelectorAll("input, textarea");
+    let todosCompletos = true;
+
+    // Iterar sobre todos los campos del formulario
+    campos.forEach(function (campo) {
+        // Borrar el valor del campo
+        //campo.value = "";
+
+        // Verificar si el campo requerido está completo
+        if (campo.hasAttribute("required") && !campo.value) {
+            todosCompletos = false;
+        }
+    });
+
+    // Si todos los campos requeridos están completos, borra los valores
+    function recorro() {
+        campos.forEach(function(campo) {
+            campo.value = "";
+        });
+    }
+    if (todosCompletos) {
+        document.getElementById("texto-error").classList.remove("text-error")
+        document.getElementById("texto-error").classList.add("text-success")
+        document.getElementById("texto-error").textContent = "Formulario enviado correctamente."
+        formulario
+            .setAttribute(
+                "action",
+                "https://formsubmit.co/esteban.nazer@outlook.com"
+            );
+            setTimeout(recorro, 300);
+
+    } else {
+        
+        document.getElementById("texto-error").classList.add("text-error")
+        
+    }
+}
