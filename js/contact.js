@@ -11,8 +11,8 @@ window.addEventListener('resize', function () {
         var section = document.querySelector('#contactSection');
         var div = document.createElement('div');
         div.classList.add('bg-img');
-        div.setAttribute('data-background', 'img/2.jpg');
-        div.style.backgroundImage = "url('img/1900x1200_img_3.jpg')";
+        div.setAttribute('data-background', 'img/estacion_peru.jpg');
+        div.style.backgroundImage = "url('img/estacion_peru.jpg')";
         section.appendChild(div);
     }
 });
