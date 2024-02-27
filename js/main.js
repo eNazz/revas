@@ -60,14 +60,14 @@ AOS.init({
 	loader();
 
 	// loader
-/* 	var loader = function () {
-		setTimeout(function () {
-			if ($('#loader').length > 0) {
-				$('#loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader(); */
+	/* 	var loader = function () {
+			setTimeout(function () {
+				if ($('#loader').length > 0) {
+					$('#loader').removeClass('show');
+				}
+			}, 1);
+		};
+		loader(); */
 
 	// Scrollax
 	$.Scrollax();
@@ -378,4 +378,3 @@ AOS.init({
 	};
 
 })(jQuery);
-
