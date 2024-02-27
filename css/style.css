@@ -12859,6 +12859,10 @@ textarea.form-control {
   color: #fff;
 }
 
+.social-hover li a:hover {
+  color: black!important;
+}
+
 .footer-small-nav>li {
   display: inline-block;
 }
