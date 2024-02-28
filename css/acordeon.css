@@ -71,24 +71,24 @@ body {
   transition: transform 0.3s;
 }
 
-.card-frec h1:before {
+h1:before {
   transform: rotate(0deg);
   -webkit-animation: close-line-one-in 0.8s forwards;
   animation: close-line-one-in 0.8s forwards;
 }
 
-.selected .card-frec h1:before {
+.selected h1:before {
   -webkit-animation: close-line-one-out 0.8s forwards;
   animation: close-line-one-out 0.8s forwards;
 }
 
-.card-frec h1:after {
+h1:after {
   transform: rotate(90deg);
   -webkit-animation: close-line-two-in 0.8s forwards;
   animation: close-line-two-in 0.8s forwards;
 }
 
-.selected .card-frec h1:after {
+.selected h1:after {
   -webkit-animation: close-line-two-out 0.8s forwards;
   animation: close-line-two-out 0.8s forwards;
 }
