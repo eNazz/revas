@@ -23,7 +23,9 @@ body {
 }
 
 @media (max-width: 966px) {
-  .card-frec {}
+  .card-frec {
+    width: 100%;
+  }
 
 }
 
@@ -44,11 +46,17 @@ body {
   position: relative;
   background: #5a779a;
   padding: 20px 75px 20px 30px;
-  font-size: 16px;
+  font-size: 0.90rem;
   line-height: 30px;
   color: #fff;
   overflow: hidden;
-  transition: background 0.3s;
+  transition: background 0.9s;
+}
+
+@media (max-width: 966px) {
+  .card-frec h1 {
+    font-size: 0.76rem;
+  }
 }
 
 .card-frec h1:hover,
@@ -68,7 +76,7 @@ body {
   width: 20px;
   height: 2px;
   background: #fff;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 h1:before {
@@ -111,11 +119,16 @@ h1:after {
 .text-cont {
   padding: 25px 30px 40px;
   background: #E8EAF6;
-  font-size: 14px;
+  font-size: 0.75rem;
   line-height: 24px;
   color: #000;
 }
 
+@media (max-width: 966px) {
+  .text-cont {
+    font-size: 0.65rem;
+  }
+}
 
 @-webkit-keyframes close-line-one-out {
 
