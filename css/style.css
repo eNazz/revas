@@ -588,28 +588,28 @@ pre code {
 
 @media (max-width: 576px) {
   .container {
-    width: 100%;
+    width: 100vw;
     max-width: 540px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 100%;
+    width: 100vw;
     max-width: 720px;
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .container {
-    width: 100%;
+    width: 100vw;
     max-width: 960px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
-    width: 100%;
+    width: 100vw;
     max-width: 1140px;
   }
 }
@@ -6996,6 +6996,9 @@ a.close.disabled {
   z-index: 1;
 }
 
+.carousel-slide {}
+
+
 .carousel.pointer-event {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
@@ -11911,6 +11914,11 @@ h5,
   z-index: 1 !important;
 }
 
+@media (max-width: 1199.98px) {
+  .hero-wrap {
+    /*  background-position: center bottom !important; */
+  }
+}
 
 .hero-wrap .overlay {
   position: inherit;
@@ -11949,7 +11957,7 @@ h5,
   background-position: 0% 70% !important;
 }
 
-@keyframes blinker {
+@-webkit-keyframes blinker {
   from {
     opacity: 1.0;
   }
@@ -11973,11 +11981,11 @@ h5,
   content: '';
   background: #5a779a;
   text-decoration: blink;
-  animation-name: blinker;
-  animation-duration: 0.6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
 }
 
 .slider-text h1 {
