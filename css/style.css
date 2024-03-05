@@ -12872,6 +12872,10 @@ textarea.form-control {
   transform: translate(-50%, -50%);
 }
 
+.ftco-social-contacto li a span {
+  font-size: 40px !important;
+}
+
 .ftco-footer-social li a:hover {
   color: #fff;
 }
@@ -13002,6 +13006,11 @@ textarea.form-control {
 
 .heading-section .subheading-home {
   font-size: 26px !important;
+}
+
+.subheading-destacado{
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .heading-section h2 {
@@ -13298,6 +13307,10 @@ textarea.form-control {
   width: 100%;
   height: 270px;
   border-radius: 15px;
+}
+
+.block-ab-centrado {
+  background-position: 0% 80% !important;
 }
 
 .blog-entry {
