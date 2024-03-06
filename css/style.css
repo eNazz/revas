@@ -14470,9 +14470,20 @@ textarea.form-control {
   }
 
   .navbar-img {
-    max-width: 150px;
-    height: 80px;
+    max-width: 200px;
+    height: 100px;
 
+  }
+
+  .background-custom {
+    background-color: #8080805e;
+    margin: 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    .background-custom {
+      margin: 0px;
+    }
   }
 
   .ftco-consulta {

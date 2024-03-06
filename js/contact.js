@@ -53,7 +53,7 @@ function borrarValor() {
         formulario
             .setAttribute(
                 "action",
-                "https://formsubmit.co/esteban.nazer@outlook.com"
+                "https://formsubmit.co/consultas@estudiorevas.com"
             );
             setTimeout(recorro, 300);
 
