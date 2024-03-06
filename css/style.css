@@ -11954,6 +11954,35 @@ h5,
   background-position: 0% 70% !important;
 }
 
+.hero-wrap.hero-wrap-2.fixedserv {
+  height: 500px;
+  background-attachment: local, scroll !important;
+  background-position: 0% 20% !important;
+}
+
+.hero-wrap.hero-wrap-2.fixedfreq {
+  height: 500px;
+  background-attachment: local, scroll !important;
+  background-position: 0% 70% !important;
+}
+
+@media (max-width: 768px) {
+  .hero-wrap.hero-wrap-2.fixed70 {
+    height: 500px;
+    background-attachment: local, scroll !important;
+    background-position: 50% 0% !important;
+  }
+  .hero-wrap.hero-wrap-2.fixedserv {
+    height: 500px;
+    background-attachment: local, scroll !important;
+    background-position: 50% 0% !important;
+  }
+  .hero-wrap.hero-wrap-2.fixedfreq {
+    height: 500px;
+    background-attachment: local, scroll !important;
+    background-position: 20% 0% !important;
+  }
+}
 
 
 @-webkit-keyframes blinker {
