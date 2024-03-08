@@ -3,11 +3,13 @@ window.addEventListener('resize', function () {
         document.querySelector('.container-cont').classList.replace('container-cont', 'mob-cont');
         document.querySelector('.contact-form').classList.replace('contact-form', 'mob-form');
         document.querySelector('.contact-map').classList.replace('contact-map', 'mob-map');
+        document.querySelectorAll('.logo-box').classList.replace('logo-box', 'logo-box-sm');
         document.querySelector('.bg-img').remove();
     } else {
         document.querySelector('.mob-cont').classList.replace('mob-cont', 'container-cont');
         document.querySelector('.mob-form').classList.replace('mob-form', 'contact-form');
         document.querySelector('.mob-map').classList.replace('mob-map', 'contact-map');
+        document.querySelectorAll('.logo-box-sm').classList.replace('logo-box-sm', 'logo-box');
         var section = document.querySelector('#contactSection');
         var div = document.createElement('div');
         div.classList.add('bg-img');
@@ -16,6 +18,18 @@ window.addEventListener('resize', function () {
         section.appendChild(div);
     }
 });
+
+function changeLogoClass() {
+    let logoBoxes = document.querySelectorAll('.logo-box');
+    for (let logoBox of logoBoxes) {
+        logoBox.classList.replace('logo-box', 'logo-box-sm');
+    }
+}
+
+window.addEventListener('box-logo', changeLogoClass);
+
+
+
 
 
 /* function borrarValor () {
@@ -42,7 +56,7 @@ function borrarValor() {
 
     // Si todos los campos requeridos están completos, borra los valores
     function recorro() {
-        campos.forEach(function(campo) {
+        campos.forEach(function (campo) {
             campo.value = "";
         });
     }
@@ -55,11 +69,11 @@ function borrarValor() {
                 "action",
                 "https://formsubmit.co/consultas@estudiorevas.com"
             );
-            setTimeout(recorro, 300);
+        setTimeout(recorro, 300);
 
     } else {
-        
+
         document.getElementById("texto-error").classList.add("text-error")
-        
+
     }
 }
